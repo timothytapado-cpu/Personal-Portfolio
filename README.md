@@ -8,9 +8,9 @@ A one-page personal portfolio that introduces me, lists the skills I can explain
 
 | What | Link |
 | --- | --- |
-| Live website | https://YOUR-USERNAME.github.io/portfolio/ |
-| GitHub repository | https://github.com/YOUR-USERNAME/portfolio |
-| Figma design (desktop and mobile) | https://www.figma.com/YOUR-PORTFOLIO-FILE |
+| Live website | https://portfolio-personal-timothy.netlify.app |
+| GitHub repository |(https://github.com/timothytapado-cpu/Personal-Portfolio) |
+| Figma design (desktop and mobile) | https://www.figma.com/design/P5hjKmQlP0vhNShVDzcyrx/Personal-Portfolio---Wireframe--Hi-Fi---Prototype?node-id=6-2&t=sVvTyHQ8ZeQJEBad-1 |
 
 ## How to open it
 
