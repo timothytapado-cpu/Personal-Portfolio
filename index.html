@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timothy Tapado | Web and Mobile Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Timothy Tapado, a BSIT student at Laguna State Polytechnic University who designs and builds websites and mobile apps.">
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5, then my own styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ============ HEADER AND NAVIGATION ============ -->
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand-md" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand wordmark" href="#home">
+                    <img src="assets/img/logo.svg" alt="" width="36" height="36">
+                    <span>tim<span class="wordmark-dot">.</span>tapado</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-md-center gap-md-2">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item mt-2 mt-md-0 ms-md-2">
+                            <button id="themeToggle" class="btn btn-outline-ink btn-sm" type="button" aria-pressed="false">
+                Dark mode
+              </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- ============ INTRODUCTION ============ -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-7">
+                        <p class="hero-hello">Hi, I'm</p>
+                        <h1 class="hero-name">Timothy Tapado</h1>
+                        <p class="hero-lead">
+                            I'm a third-year BSIT student who designs and builds websites and mobile apps that people can use without a manual.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a class="btn btn-primary btn-lg" href="#projects">See my projects</a>
+                            <a class="btn btn-outline-ink btn-lg" href="#contact">Contact me</a>
+                            <a class="btn btn-outline-ink btn-lg" href="assets/img/Resume%20Timothy%20Norzen%20Tapado%20%281%29.pdf" target="_blank" rel="noopener">View my CV</a>
+                            <a class="btn btn-outline-ink btn-lg" href="assets/img/Resume%20Timothy%20Norzen%20Tapado%20%281%29.pdf" download="Timothy-Tapado-CV.pdf">Download my CV</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <!-- EDIT: replace profile.svg with your own photo (for example assets/img/profile.jpg)
+                 and change the alt text to "Portrait of Timothy Tapado". -->
+                        <figure class="phone mx-auto">
+                            <span class="phone-notch" aria-hidden="true"></span>
+                            <img src="https://media.licdn.com/dms/image/v2/D4E03AQERB-dHqu0YAw/profile-displayphoto-scale_400_400/B4EaHD2nCLIEAg-/0/1794287239961?e=1796256000&v=beta&t=hftpVp-ZMoyGIM_FmpQMxLSUx67f6Hh13FZ27GkeLY8" width="540" height="960" alt="Portrait of Timothy Tapado">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ DEVELOPER PROFILE ============ -->
+        <section id="about" class="section section-tint">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-7">
+                        <h2>About me</h2>
+                        <p>
+                            I study Information Technology at Laguna State Polytechnic University, where I specialize in Web and Mobile Application Development. I like the part of a project where a rough idea turns into a screen someone can tap through.
+                        </p>
+                        <p>
+                            I start most projects in Figma, then build the design with HTML, CSS, Bootstrap, and JavaScript. Right now I'm working on my capstone, a booking and management system for phone repair shops.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <dl class="fact-list">
+                            <div class="fact">
+                                <dt>Course</dt>
+                                <dd>BS Information Technology</dd>
+                            </div>
+                            <div class="fact">
+                                <dt>Section</dt>
+                                <dd>BSIT 3 WMAD</dd>
+                            </div>
+                            <div class="fact">
+                                <dt>School</dt>
+                                <dd>Laguna State Polytechnic University</dd>
+                            </div>
+                            <div class="fact">
+                                <dt>Focus</dt>
+                                <dd>Web and mobile application development</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS (JavaScript filter) ============ -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <p class="section-intro">
+                    Choose a group to filter the list. Languages are what I write code in; frameworks and tools are what I use to design, build, and publish.
+                </p>
+
+                <div class="filter-bar" role="group" aria-label="Filter skills by group">
+                    <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-btn" type="button" data-filter="language" aria-pressed="false">Languages</button>
+                    <button class="filter-btn" type="button" data-filter="framework" aria-pressed="false">Frameworks</button>
+                    <button class="filter-btn" type="button" data-filter="tool" aria-pressed="false">Tools</button>
+                </div>
+                <p id="skillStatus" class="filter-status" aria-live="polite">Showing all 7 skills</p>
+
+                <!-- EDIT: list only skills you can explain. Copy an <li> to add one. -->
+                <ul class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 list-unstyled skill-list">
+                    <li class="col skill" data-category="language">
+                        <div class="skill-card">
+                            <h3>HTML5</h3>
+                            <p class="skill-type">Language</p>
+                            <p>Semantic page structure with header, nav, main, section, and footer.</p>
+                        </div>
+                    </li>
+
+                    <li class="col skill" data-category="language">
+                        <div class="skill-card">
+                            <h3>JavaScript</h3>
+                            <p class="skill-type">Language</p>
+                            <p>Events and DOM updates, like the filter on this section.</p>
+                        </div>
+                    </li>
+                    <li class="col skill" data-category="language">
+                        <div class="skill-card">
+                            <h3>Python</h3>
+                            <p class="skill-type">Language</p>
+                            <p>Scripting and automation tasks.</p>
+                        </div>
+                    </li>
+                    <li class="col skill" data-category="framework">
+                        <div class="skill-card">
+                            <h3>Bootstrap 5</h3>
+                            <p class="skill-type">Framework</p>
+                            <p>Responsive grids, navbars, and components for phone, tablet, and desktop.</p>
+                        </div>
+                    </li>
+                    <li class="col skill" data-category="framework">
+                        <div class="skill-card">
+                            <h3>Django</h3>
+                            <p class="skill-type">Framework</p>
+                            <p>Web application framework for rapid development.</p>
+                        </div>
+                    </li>
+                    <li class="col skill" data-category="framework">
+                        <div class="skill-card">
+                            <h3>React</h3>
+                            <p class="skill-type">Framework</p>
+                            <p>Component-based UI library for building interactive user interfaces.</p>
+                        </div>
+                    </li>
+                    <li class="col skill" data-category="tool">
+                        <div class="skill-card">
+                            <h3>Figma</h3>
+                            <p class="skill-type">Tool</p>
+                            <p>Desktop and mobile mockups before I write any code.</p>
+                        </div>
+                    </li>
+                    <li class="col skill" data-category="tool">
+                        <div class="skill-card">
+                            <h3>Claude</h3>
+                            <p class="skill-type">Tool</p>
+                            <p>AI assistant for generating and refining code and design ideas.</p>
+                        </div>
+                    </li>
+                    <li class="col skill" data-category="tool">
+                        <div class="skill-card">
+                            <h3>Git and GitHub</h3>
+                            <p class="skill-type">Tool</p>
+                            <p>Commit history, repositories, and publishing with GitHub Pages and netlify.</p>
+                        </div>
+                    </li>
+                    <li class="col skill" data-category="tool">
+                        <div class="skill-card">
+                            <h3>VS Code</h3>
+                            <p class="skill-type">Tool</p>
+                            <p>My everyday editor for writing and previewing code.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============ PROJECT SAMPLES ============ -->
+        <section id="projects" class="section section-tint">
+            <div class="container">
+                <h2>Projects</h2>
+
+                <article class="project row align-items-center gy-4">
+                    <div class="col-md-6">
+                        <img class="img-fluid project-shot" src="assets/img/project-repairhub.svg" width="960" height="600" loading="lazy" alt="RepairHub ticket board mockup with three columns of repair tickets: In progress, Ready, and Done">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>RepairHub</h3>
+                        <p>
+                            A web-based booking and management system for phone repair shops. Customers find a nearby shop on a map, book a repair, and track its status. Shops manage tickets, inventory, and staff.
+                        </p>
+                        <!-- EDIT: describe your real contribution and add a working link. -->
+                        <dl class="project-meta">
+                            <dt>Status</dt>
+                            <dd>Capstone project, in progress</dd>
+                            <dt>My contribution</dt>
+                            <dd>System architecture planning and UI/UX design for the customer, shop owner, technician, and admin screens</dd>
+                            <dt>Tools used</dt>
+                            <dd>Figma, HTML, CSS, JavaScript</dd>
+                        </dl>
+                        <a class="btn btn-outline-ink" href="https://www.figma.com/file/YOUR-REPAIRHUB-FILE">View the RepairHub design in Figma</a>
+                    </div>
+                </article>
+
+                <article class="project row align-items-center gy-4 flex-md-row-reverse">
+                    <div class="col-md-6">
+                        <img class="img-fluid project-shot" src="assets/img/project-portfolio.svg" width="960" height="600" loading="lazy" alt="Wireframe of this portfolio shown on a desktop screen and a phone screen side by side">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>This portfolio</h3>
+                        <p>
+                            My final project for ITST 301 Principles of Web Design. I designed the desktop and mobile layouts in Figma, then built and published the site myself.
+                        </p>
+                        <dl class="project-meta">
+                            <dt>My contribution</dt>
+                            <dd>Design, code, testing, and deployment</dd>
+                            <dt>Tools used</dt>
+                            <dd>Figma, HTML5, CSS, Bootstrap 5, JavaScript, GitHub Pages</dd>
+                        </dl>
+                        <a class="btn btn-outline-ink" href="https://github.com/timothytapado-cpu/portfolio">View the portfolio source code on GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="row gy-4 align-items-end">
+                    <div class="col-lg-6">
+                        <h2>Let's work on something</h2>
+                        <p class="section-intro mb-0">
+                            I'm open to internships, group projects, and feedback on my work. Email is the fastest way to reach me.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+
+                        <ul class="list-unstyled contact-list">
+                            <li>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:your.timothytapado@gmail.com">your.timothytapado@gmail.com</a>
+                            </li>
+                            <li>
+                                <span class="contact-label">GitHub</span>
+                                <a href="https://github.com/timothytapado-cpu">Timothy Tapado on GitHub</a>
+                            </li>
+                            <li>
+                                <span class="contact-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/timothy-tapado-85062944a/">Timothy Tapado on LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between gap-2">
+            <p class="mb-0">&copy; <span id="year">2026</span> Timothy Tapado. Built with HTML5, CSS, Bootstrap 5, and JavaScript.</p>
+            <a href="#home">Back to top</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

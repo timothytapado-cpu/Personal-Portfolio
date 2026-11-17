@@ -1,0 +1,209 @@
+/* =========================================================
+   Timothy Tapado - Portfolio styles
+   1. Color palette and tokens
+   2. Base and typography
+   3. Header and navigation
+   4. Buttons
+   5. Hero
+   6. Sections (about, skills, projects, contact)
+   7. Footer
+   8. Accessibility and motion
+   ========================================================= */
+
+/* ---------- 1. Color palette and tokens ---------- */
+:root {
+  --ink: #14213D;        /* headings, body text, phone frame */
+  --blue: #2457D6;       /* links, primary buttons, focus ring */
+  --amber: #FFB703;      /* accent: wordmark dot, active filter, highlights */
+  --paper: #FFFFFF;      /* page background */
+  --tint: #EEF2FB;       /* alternate section background */
+  --muted: #4A5672;      /* secondary text */
+  --line: #D3DAEA;       /* borders */
+
+  --bg: var(--paper);
+  --bg-tint: var(--tint);
+  --surface: #FFFFFF;
+  --text: var(--ink);
+  --text-muted: var(--muted);
+  --link: var(--blue);
+  --border: var(--line);
+
+  --font-display: "Bricolage Grotesque", "Segoe UI", sans-serif;
+  --font-body: "Figtree", "Segoe UI", Arial, sans-serif;
+}
+
+[data-bs-theme="dark"] {
+  --bg: #0E1730;
+  --bg-tint: #131F3F;
+  --surface: #1A2850;
+  --text: #EEF2FB;
+  --text-muted: #B9C3DE;
+  --link: #9DBAFF;
+  --border: #334270;
+}
+
+/* ---------- 2. Base and typography ---------- */
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+body {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--text);
+  background-color: var(--bg);
+  transition: background-color .3s ease, color .3s ease;
+}
+
+h1, h2, h3 { font-family: var(--font-display); color: var(--text); line-height: 1.1; }
+h2 { font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 700; letter-spacing: -0.02em; margin-bottom: 1rem; }
+h3 { font-size: 1.375rem; font-weight: 700; }
+
+p { max-width: 62ch; }
+a { color: var(--link); text-underline-offset: 3px; }
+a:hover { color: var(--link); text-decoration-thickness: 2px; }
+img { max-width: 100%; height: auto; }
+
+/* ---------- 3. Header and navigation ---------- */
+.site-header {
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border);
+  transition: background-color .3s ease;
+}
+
+.wordmark {
+  display: inline-flex; align-items: center; gap: .6rem;
+  font-family: var(--font-display); font-weight: 800; font-size: 1.25rem;
+  color: var(--text); letter-spacing: -0.02em;
+}
+.wordmark:hover { color: var(--text); }
+.wordmark-dot { color: var(--amber); }
+
+.navbar .nav-link { color: var(--text); font-weight: 600; border-radius: .5rem; padding-inline: .75rem; }
+.navbar .nav-link:hover { color: var(--link); }
+.navbar-toggler { border-color: var(--border); }
+
+/* ---------- 4. Buttons ---------- */
+.btn { font-weight: 600; border-radius: 999px; padding-inline: 1.4em; }
+.btn-primary {
+  --bs-btn-bg: var(--blue); --bs-btn-border-color: var(--blue);
+  --bs-btn-hover-bg: #1B45B0; --bs-btn-hover-border-color: #1B45B0;
+  --bs-btn-active-bg: #173A94; --bs-btn-active-border-color: #173A94;
+  --bs-btn-color: #fff;
+}
+.btn-outline-ink {
+  color: var(--text); border: 2px solid var(--text); background: transparent;
+}
+.btn-outline-ink:hover, .btn-outline-ink[aria-pressed="true"] {
+  color: var(--bg); background: var(--text); border-color: var(--text);
+}
+
+/* ---------- 5. Hero ---------- */
+.hero { padding-block: clamp(3rem, 8vw, 6.5rem); }
+.hero-hello { font-size: 1.25rem; font-weight: 600; color: var(--text-muted); margin-bottom: .25rem; }
+.hero-name {
+  font-size: clamp(3rem, 11vw, 6.75rem);
+  font-weight: 800; letter-spacing: -0.045em; line-height: .92;
+  margin-bottom: 1.5rem;
+}
+.hero-lead { font-size: clamp(1.15rem, 2.2vw, 1.4rem); max-width: 34ch; margin-bottom: 2rem; }
+
+/* Profile image inside a phone frame (I build for phones, so the photo lives in one) */
+.phone {
+  position: relative;
+  width: min(100%, 290px);
+  aspect-ratio: 9 / 16;
+  margin-bottom: 0;
+  border: 10px solid var(--ink);
+  border-radius: 2.5rem;
+  overflow: hidden;
+  background: var(--amber);
+  box-shadow: 14px 14px 0 var(--amber);
+  transform: rotate(3deg);
+}
+[data-bs-theme="dark"] .phone { border-color: #05091A; }
+.phone img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.phone-notch {
+  position: absolute; top: .6rem; left: 50%; transform: translateX(-50%);
+  width: 32%; height: 1.1rem; border-radius: 999px; background: var(--ink); z-index: 1;
+}
+
+/* ---------- 6. Sections ---------- */
+.section { padding-block: clamp(3.5rem, 8vw, 6rem); }
+.section-tint { background-color: var(--bg-tint); transition: background-color .3s ease; }
+.section-intro { color: var(--text-muted); font-size: 1.125rem; }
+
+/* About: fact list */
+.fact-list { margin: 0; border-top: 2px solid var(--text); }
+.fact { display: flex; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--border); }
+.fact dt { flex: 0 0 6rem; color: var(--text-muted); font-weight: 500; }
+.fact dd { margin: 0; font-weight: 600; }
+
+/* Skills: filter buttons */
+.filter-bar { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.5rem; }
+.filter-btn {
+  font: inherit; font-weight: 600;
+  padding: .5rem 1.1rem; border-radius: 999px;
+  color: var(--text); background: transparent; border: 2px solid var(--border);
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+.filter-btn:hover { border-color: var(--text); }
+.filter-btn[aria-pressed="true"] { background: var(--amber); border-color: var(--amber); color: var(--ink); }
+.filter-status { color: var(--text-muted); font-size: .95rem; margin: .75rem 0 1.5rem; }
+
+/* Skills: cards. The .is-fading class is added and removed by js/script.js */
+.skill { transition: opacity .2s ease, transform .2s ease; }
+.skill.is-fading { opacity: 0; transform: translateY(8px) scale(.97); }
+.skill-card {
+  height: 100%; padding: 1.25rem 1.4rem;
+  background: var(--surface); border: 1px solid var(--border);
+  border-left: 6px solid var(--blue); border-radius: .75rem;
+  transition: background-color .3s ease;
+}
+.skill[data-category="framework"] .skill-card { border-left-color: var(--amber); }
+.skill[data-category="tool"] .skill-card { border-left-color: var(--text); }
+.skill-card h3 { margin-bottom: .1rem; }
+.skill-type { color: var(--text-muted); font-size: .9rem; font-weight: 600; margin-bottom: .5rem; }
+.skill-card p:last-child { margin-bottom: 0; }
+
+/* Projects */
+.project + .project { margin-top: clamp(3rem, 6vw, 5rem); }
+.project { margin-top: 1.5rem; }
+.project-shot { border-radius: 1rem; border: 1px solid var(--border); background: #fff; }
+.project-meta { margin: 1.25rem 0 1.5rem; }
+.project-meta dt { color: var(--text-muted); font-size: .9rem; font-weight: 600; }
+.project-meta dd { margin-bottom: .75rem; }
+
+/* Contact */
+.contact-list { margin: 0; border-top: 2px solid var(--text); }
+.contact-list li { display: flex; flex-wrap: wrap; gap: .25rem 1rem; padding: 1rem 0; border-bottom: 1px solid var(--border); }
+.contact-label { flex: 0 0 6rem; color: var(--text-muted); font-weight: 500; }
+.contact-list a { font-weight: 600; font-size: 1.125rem; overflow-wrap: anywhere; }
+
+/* ---------- 7. Footer ---------- */
+.site-footer { padding-block: 1.5rem; border-top: 1px solid var(--border); color: var(--text-muted); font-size: .95rem; }
+.site-footer p { max-width: none; }
+
+/* ---------- 8. Accessibility and motion ---------- */
+.skip-link {
+  position: absolute; left: 1rem; top: -4rem; z-index: 2000;
+  padding: .6rem 1rem; border-radius: .5rem;
+  background: var(--ink); color: #fff; font-weight: 600;
+  transition: top .15s ease;
+}
+.skip-link:focus { top: 1rem; color: #fff; }
+
+/* One visible focus style for every interactive control */
+a:focus-visible, button:focus-visible, .btn:focus-visible, .nav-link:focus-visible, .navbar-toggler:focus-visible {
+  outline: 3px solid var(--link);
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+@media (max-width: 991.98px) {
+  .phone { width: min(70%, 250px); transform: rotate(0deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; }
+}

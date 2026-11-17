@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="600" fill="#EEF2FB"/>
+  <rect width="960" height="72" fill="#14213D"/>
+  <circle cx="48" cy="36" r="14" fill="#FFB703"/>
+  <text x="74" y="43" fill="#FFFFFF" font-size="22" font-weight="700">RepairHub</text>
+  <rect x="760" y="22" width="160" height="28" rx="14" fill="#2457D6"/>
+  <g font-size="18" font-weight="700" fill="#14213D">
+    <text x="48" y="122">In progress</text>
+    <text x="352" y="122">Ready</text>
+    <text x="656" y="122">Done</text>
+  </g>
+  <g>
+    <rect x="40" y="144" width="264" height="416" rx="14" fill="#DDE4F4"/>
+    <rect x="344" y="144" width="264" height="416" rx="14" fill="#DDE4F4"/>
+    <rect x="648" y="144" width="264" height="416" rx="14" fill="#DDE4F4"/>
+  </g>
+  <g fill="#FFFFFF">
+    <rect x="56" y="160" width="232" height="104" rx="10"/>
+    <rect x="56" y="280" width="232" height="104" rx="10"/>
+    <rect x="56" y="400" width="232" height="104" rx="10"/>
+    <rect x="360" y="160" width="232" height="104" rx="10"/>
+    <rect x="360" y="280" width="232" height="104" rx="10"/>
+    <rect x="664" y="160" width="232" height="104" rx="10"/>
+  </g>
+  <g fill="#2457D6">
+    <rect x="56" y="160" width="8" height="104" rx="4"/>
+    <rect x="56" y="280" width="8" height="104" rx="4"/>
+    <rect x="56" y="400" width="8" height="104" rx="4"/>
+  </g>
+  <g fill="#FFB703">
+    <rect x="360" y="160" width="8" height="104" rx="4"/>
+    <rect x="360" y="280" width="8" height="104" rx="4"/>
+  </g>
+  <rect x="664" y="160" width="8" height="104" rx="4" fill="#14213D"/>
+  <g fill="#14213D">
+    <rect x="80" y="180" width="140" height="14" rx="7"/>
+    <rect x="80" y="300" width="110" height="14" rx="7"/>
+    <rect x="80" y="420" width="150" height="14" rx="7"/>
+    <rect x="384" y="180" width="120" height="14" rx="7"/>
+    <rect x="384" y="300" width="150" height="14" rx="7"/>
+    <rect x="688" y="180" width="130" height="14" rx="7"/>
+  </g>
+  <g fill="#B9C3DE">
+    <rect x="80" y="206" width="180" height="10" rx="5"/><rect x="80" y="226" width="120" height="10" rx="5"/>
+    <rect x="80" y="326" width="180" height="10" rx="5"/><rect x="80" y="346" width="90" height="10" rx="5"/>
+    <rect x="80" y="446" width="170" height="10" rx="5"/><rect x="80" y="466" width="130" height="10" rx="5"/>
+    <rect x="384" y="206" width="180" height="10" rx="5"/><rect x="384" y="226" width="100" height="10" rx="5"/>
+    <rect x="384" y="326" width="170" height="10" rx="5"/><rect x="384" y="346" width="130" height="10" rx="5"/>
+    <rect x="688" y="206" width="180" height="10" rx="5"/><rect x="688" y="226" width="110" height="10" rx="5"/>
+  </g>
+</svg>

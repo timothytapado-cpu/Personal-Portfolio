@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="TT monogram logo">
+  <rect width="64" height="64" rx="16" fill="#14213D"/>
+  <path d="M12 18h24v7h-8.5v23h-7V25H12z" fill="#FFFFFF"/>
+  <path d="M30 30h22v7h-7.5v11h-7V37H30z" fill="#FFB703"/>
+</svg>
