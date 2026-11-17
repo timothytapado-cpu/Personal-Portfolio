@@ -27,7 +27,7 @@ portfolio/
 ├── js/
 │   └── script.js       Skill filter and dark mode
 ├── assets/
-│   └── img/            Logo, profile image, project images
+│   └── img/            Logo, profile image, project images and CV
 └── README.md
 ```
 
