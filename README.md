@@ -9,7 +9,7 @@ A one-page personal portfolio that introduces me, lists the skills I can explain
 | What | Link |
 | --- | --- |
 | Live website | https://portfolio-personal-timothy.netlify.app |
-| GitHub repository |(https://github.com/timothytapado-cpu/Personal-Portfolio) |
+| GitHub repository | https://github.com/timothytapado-cpu/Personal-Portfolio |
 | Figma design (desktop and mobile) | https://www.figma.com/design/P5hjKmQlP0vhNShVDzcyrx/Personal-Portfolio---Wireframe--Hi-Fi---Prototype?node-id=6-2&t=sVvTyHQ8ZeQJEBad-1 |
 
 ## How to open it
@@ -52,7 +52,7 @@ portfolio/
 
 | Feature | Event (trigger) | Visible result |
 | --- | --- | --- |
-| Skill filter | `click` on a filter button in the Skills section | Cards fade out, only the chosen group fades back in, the button turns yellow, and the status text updates (for example "Showing 3 of 7 skills") |
+| Skill filter | `click` on a filter button in the Skills section | Cards fade out, only the chosen group fades back in, the button turns yellow, and the status text updates (for example "Showing 3 of 10 skills") |
 | Dark mode | `click` on the "Dark mode" button in the navigation | Page colors change with a 0.3 second transition, the button label changes to "Light mode", and the choice is saved in `localStorage` |
 
 Both work with the keyboard: press Tab to reach the button, then Enter or Space.
@@ -81,6 +81,6 @@ Fonts: Bricolage Grotesque (headings) and Figtree (body), both from Google Fonts
 
 ## Credits
 
-- Logo, profile illustration, and project illustrations: original work by Timothy Tapado
+- Logo, profile photo, and project illustrations: original work by Timothy Tapado
 - Bootstrap 5.3 (MIT License): https://getbootstrap.com
 - Fonts: Bricolage Grotesque and Figtree from Google Fonts (SIL Open Font License)
